@@ -84,6 +84,20 @@ router.post('/', (req, res) => {
     });
 });
 
+router.post('/new-post', (req, res) => {
+  Post.create({
+    title: req.body.title,
+    text: req.body.text,
+    user_id: req.body.user_id
+  })
+    .then(dbPostData => res.json(dbPostData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+
 router.put('/:id', (req, res) => {
   Post.update(
     {
