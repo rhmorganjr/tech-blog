@@ -1,16 +1,18 @@
-<form class="login-form">
-  <h3>Login</h3>
-  <div>
-    <label for="username-login">Username</label>
-    <input type="text" id="username-login" />
+<div class="container">
+<form class="login-form post">
+  <h5 class="title row">Login</h5>
+  <div class="row">
+    <label class="login-label" for="username-login">Username</label>
+    <input class="login-text" type="text" id="username-login" />
+  </div>
+  <div class="row">
+    <label class="login-label" for="password-login">Password</label>
+    <input class="login-text" type="password" id="password-login" />
   </div>
   <div>
-    <label for="password-login">Password</label>
-    <input type="password" id="password-login" />
+    <button class="login-button row" type="submit">Login</button>
   </div>
-  <div>
-    <button type="submit">Login</button>
-  </div>
-  <a href="/signup">Sign Up instead</a>
+  <a class="login-switch" href="/signup">Sign Up instead</a>
 </form>
+</div>
 <script src="/javascript/login.js"></script>

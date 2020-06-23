@@ -3,15 +3,13 @@ async function createPostHandler(event) {
 
   const title = document.querySelector('#title').value.trim();
   const text  = document.querySelector('#content').value.trim();
-  const user_id = 1;
 
   if (title && text) {
     const response = await fetch('/api/posts/new-post', {
       method: 'post',
       body: JSON.stringify({
         title,
-        text,
-        user_id
+        text
       }),
       headers: { 'Content-Type': 'application/json' }
     });

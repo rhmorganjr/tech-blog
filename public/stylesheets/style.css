@@ -184,6 +184,32 @@ span {
   margin: 5px 12px;
 }
 
+.login-text {
+  background-color: white;
+  width: 95%;
+  margin: 0px 24px;
+}
+
+.login-label {
+  width: 100%;
+  padding-left: 24px;
+  margin-left: 0px;
+}
+
+.login-button {
+  width: 95%;
+  color: white;
+  background-color: black;
+  margin-left: 12px;
+  padding-left: 300px;
+}
+
+.login-switch {
+  color: white;
+  background-color: #225ca3;
+  margin-left: 12px;
+}
+
 .title-white {
   color: white;
 }
