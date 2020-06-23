@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechBlog</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <!--{{#if loggedIn}} -->
+        <!--a href="/dashboard">dashboard</a-->
+        <!--button id="dashboard" class="btn-no-style">Dashboard</button-->
+        <!--{{else}}-->
+        <a href="/login">Login</a>
+        <button id="logout" class="btn-no-style">logout</button>
+        <!--{{/if}}-->
+      </nav>
+      </div>
+      <div>
+        <h1>The Tech Blog</h1>
+      </div>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+  </div>
+
+  </body>
+
+  </html>
