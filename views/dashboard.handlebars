@@ -1,18 +1,22 @@
-<form class="post-form">
-  <h3>Create New Post</h3>
-  <div>
-    <label for="title">Title</label>
-    <input type="text" id="title" />
-  </div>
-  <div>
-    <label for="content">Content</label>
-    <input type="text" id="content" />
-  </div>
-  <div>
-    <button type="submit">Create</button>
-  </div>
-</form>
+
+<div class="container">
+  <form class="post-form post">
+    <h5 class="title">Create New Post</h5>
+    <div>
+      <label for="title">Title</label>
+      <input class="new-post-title" type="text" id="title" />
+    </div>
+    <div>
+      <label for="content">Content</label>
+      <textarea class="new-post-textarea" name="text" id="content" cols="80" rows="2">{{text}}</textarea>
+    </div>
+    <div>
+      <button class="new-post-button" type="submit">Create</button>
+    </div>
+  </form>
+</div>
+
 <div>
-  <button type="submit">New Post</button>
+  <button class="new-post" type="submit">New Post</button>
 </div>
 <script src="/javascript/post.js"></script>

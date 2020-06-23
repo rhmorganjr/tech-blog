@@ -6,7 +6,6 @@ async function createPostHandler(event) {
   const user_id = 1;
 
   if (title && text) {
-    console.log("post.js");
     const response = await fetch('/api/posts/new-post', {
       method: 'post',
       body: JSON.stringify({

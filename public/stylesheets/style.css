@@ -21,6 +21,11 @@ a:hover {
   color: #3486eb;
 }
 
+li.nostyle {
+  list-style-type: none;
+}
+
+/*
 button {
   background-color: #225ca3;
   border: 0;
@@ -35,16 +40,16 @@ button {
 button:hover {
   background-color: #3486eb;
 }
-
+*/
 .post-list {
   margin: 0;
   padding: 0;
 }
 
 textarea, input {
-  padding: .5%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  width: 100%;
+  border: none;
+  /*border-top: 1px solid #ccc;*/
 }
 
 textarea:focus, input:focus {
@@ -75,15 +80,10 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
-}
-
-header h1 {
-  font-size: 1em;
+  border: solid 1px;
+  border-color: black;
+  background-color: black;
+  padding: 10px;
 }
 
 main {
@@ -95,13 +95,27 @@ span {
   float: right;
 }
 
+.nav-item {
+  color: white;
+  font-weight: bold;
+}
+
+.title-item {
+  border: solid 1px;
+  border-color: #225c00;
+  background-color: #6d9456;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
 .btn-no-style {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: white;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -122,14 +136,56 @@ span {
 }
 
 .post {
-  margin-bottom: 2%;
-  line-height: 150%;
+  /*margin-bottom: 2%;
+  line-height: 150%;*/
+  border: solid 2px;
+  margin-bottom: 5px;
+  background-color: #7fa56a;
+}
+
+.post .title {
+  color: white;
+  background-color: black;
 }
 
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  color: white;
+}
+
+.post .title {
+  width: 100%;
+  padding-left: 12px;
+  margin-left: 0px;
+}
+
+.post-textarea {
+  background-color: #7fa56a;
+
+}
+/*
+.new-post-title {
+  background-color: white;
+  width: 95%;
+  margin: 5px 12px;
+}
+*/
+.new-post-textarea {
+  background-color: white;
+  width: 95%;
+  margin: 5px 12px;
+}
+
+.new-post-button {
+  width: 95%;
+  color: white;
+  background-color: black;
+  margin: 5px 12px;
+}
+
+.title-white {
+  color: white;
 }
 
 .edit-link {
@@ -146,6 +202,11 @@ span {
   margin-bottom: 1%;
 }
 
+.comment-textarea {
+  border: solid 1px;
+  width: 95%;
+}
+
 .comment:nth-child(odd) {
   background-color: #fff5eb;
 }
@@ -156,18 +217,23 @@ span {
   opacity: .6;
 }
 
+.comment-button {
+  width: 95%;
+  color: white;
+  background-color: black;
+}
+
 .new-post-form input {
   width: 300px;
 }
 
-.edit-post-form {
-  margin-bottom: 5%;
+.new-post {
+  color: white;
+  background-color: black;
+  width: 95%;
+  margin-left: 20px;
 }
 
-footer {
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
+.edit-post-form {
+  margin-bottom: 5%;
 }

@@ -5,34 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechBlog</title>
+  <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+      crossorigin="anonymous"
+    />
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <div>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/dashboard">Dashboard</a>
+    <header class="header">
+      <div class="container">
+      <nav class="row">
+        <a class="col-md-1 nav-item" href="/">Home</a>
+        <a class="col-md-2 nav-item" href="/dashboard">Dashboard</a>
         <!--{{#if loggedIn}} -->
         <!--a href="/dashboard">dashboard</a-->
         <!--button id="dashboard" class="btn-no-style">Dashboard</button-->
         <!--{{else}}-->
-        <a href="/login">Login</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a class="col-md-1 nav-item" href="/login">Login</a>
+        <button id="logout" class="btn-no-style col-md-1 nav-item">Logout</button>
         <!--{{/if}}-->
       </nav>
       </div>
-      <div>
-        <h1>The Tech Blog</h1>
+
+      <div class="row">
+        <h5 class="col-md-1"></h5>
+        <h4 class="col-md-3 title-item">The Tech Blog</h4>
       </div>
     </header>
     <main>
       {{{ body }}}
     </main>
   </div>
+  <script src="/javascript/logout.js"></script>
+</body>
 
-  </body>
-
-  </html>
+</html>
+  

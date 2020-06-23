@@ -1,32 +1,19 @@
-<!-- ol class="post-list">
-  <li>
-    <article class="post">
-      <div class="title">
-        <a href="{{text}}" target="_blank">{{title}}</a>
-        <span>({{text}})</span>
-      </div>
-      <div class="meta">
-        by {{user.username}} on
-        {{created_at}}
-        |
-        <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
-      </div>
-    </article>
-  </li>
-</ol -->
+
 <ol class="post=list">
   {{#each posts as |post|}}
-  <li>
+  <li class="nostyle">
+    <div class="container">
     <article class="post">
-      <div class="title">
-        <a href="/post/{{id}}" target="_blank">{{title}}</a>
-        <span>Posted by {{user.username}} on
+      <div class="title row">
+        <a class="col-md-7 title-white" href="/post/{{id}}" target="_blank">{{title}}</a>
+        <span class="col-md-5">Posted by {{user.username}} on
         {{format_date created_at}}</span>
       </div>
       <div>
-        <textarea name="text" id="text" cols="80" rows="2">{{text}}</textarea>
+        <textarea class="post-textarea" name="text" id="text" cols="80" rows="2">{{text}}</textarea>
       </div>
     </article>
+    </div>
   </li>
   {{/each}}
 </ol>

@@ -1,26 +1,25 @@
 
 <article class="post">
   <div class="title">
-    <a href="{{title}}" target="_blank">{{title}}</a>
-    <span>Posted by {{user.username}} on
-        {{format_date created_at}}</span>
+    <p>{{post.title}}
+    <span>Posted by {{post.user.username}} on
+        {{format_date post.created_at}}</span>
+    </p>
   </div>
   <div>
-    <textarea name="text" id="text" cols="80" rows="2">{{text}}</textarea>
+    <textarea class="post-textarea" name="text" id="text" cols="80" rows="2">{{post.text}}</textarea>
   </div>
 </article>
 
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">Submit</button>
+<form class="comment-form post">
+  <div class="">
+    <label for="comment">Comment</label>
+    <textarea id="comment" class="comment-textarea" name="comment-body"></textarea>
+    <button class="comment-button" type="submit">Submit</button>
   </div>
 </form>
 
-<div class="comments">
+<!--div class="comments">
   {{#each post.comments}}
   <section class="comment">
     <div class="meta">
@@ -31,6 +30,6 @@
     </div>
   </section>
   {{/each}}
-</div>
+</div-->
 
 <script src="/javascript/comment.js"></script>
