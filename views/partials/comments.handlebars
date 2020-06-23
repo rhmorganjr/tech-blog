@@ -1,0 +1,26 @@
+<form class="comment-form post">
+  <div class="">
+    <label class="comment-text" for="comment">Add Comment</label>
+    <textarea id="comment" class="comment-textarea" name="comment-body"></textarea>
+    <button class="comment-button" type="submit">Submit</button>
+  </div>
+</form>
+
+<div class="container">
+<div class="comments">
+  <h5>Comments</h5>
+  {{#each post.comments}}
+  <div class="title-item"></div>
+  <section class="post">
+    <div class="comment-text">
+      {{comment_text}}
+    </div>
+    <div class="comment-text">
+      {{user.username}} on {{format_date created_at}}
+    </div>
+  </section>
+  {{/each}}
+</div>
+</div>
+
+<script src="/javascript/comment.js"></script>

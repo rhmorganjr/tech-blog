@@ -1,6 +1,6 @@
 async function signupFormHandler(event) {
   event.preventDefault();
-console.log("signupFormHandler");
+console.log("### signupFormHandler");
   const username = document.querySelector('#username-signup').value.trim();
   const email = username + "@gmail.com";
   const password = document.querySelector('#password-signup').value.trim();

@@ -1,13 +1,14 @@
-async function createPostHandler(event) {
+async function updatePostHandler(event) {
   event.preventDefault();
 
   const title = document.querySelector('#title').value.trim();
   const text  = document.querySelector('#content').value.trim();
   const user_id = 1;
+  console.log("update = "+postMessage.user_id);
 
   if (title && text) {
-    const response = await fetch('/api/posts/new-post', {
-      method: 'post',
+    const response = await fetch('/api/posts/', {
+      method: 'put',
       body: JSON.stringify({
         title,
         user_id,
@@ -24,4 +25,4 @@ async function createPostHandler(event) {
   }
 }
 
-document.querySelector('.post-form').addEventListener('submit', createPostHandler);
+document.querySelector('.post-form').addEventListener('submit', updatePostHandler);

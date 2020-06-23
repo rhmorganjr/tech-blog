@@ -16,6 +16,7 @@ console.log("## login.js");
     console.log("## "+response.json);
     // check the response status
     if (response.ok) {
+      //req.session.loggedIn = true;
       document.location.replace('/');
     } else {
       alert(response.statusText);

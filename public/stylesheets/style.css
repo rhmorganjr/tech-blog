@@ -162,8 +162,15 @@ span {
 
 .post-textarea {
   background-color: #7fa56a;
+  padding-left: 15px;
 
 }
+
+.post-options {
+  background-color: black;
+}
+
+
 /*
 .new-post-title {
   background-color: white;
@@ -171,17 +178,28 @@ span {
   margin: 5px 12px;
 }
 */
+.new-post-label {
+  width: 95%;
+  margin: 5px 15px;
+}
+
+.new-post-text {
+  background-color: white;
+  width: 95%;
+  margin: 5px 15px;
+}
+
 .new-post-textarea {
   background-color: white;
   width: 95%;
-  margin: 5px 12px;
+  margin: 5px 15px;
 }
 
 .new-post-button {
   width: 95%;
   color: white;
   background-color: black;
-  margin: 5px 12px;
+  margin: 5px 15px;
 }
 
 .login-text {
@@ -226,27 +244,28 @@ span {
 .comment {
   padding: 1%;
   margin-bottom: 1%;
+  background-color: #7fa56a;
 }
 
 .comment-textarea {
   border: solid 1px;
   width: 95%;
+  margin-left: 12px;
 }
 
-.comment:nth-child(odd) {
-  background-color: #fff5eb;
-}
-
-.comment .meta {
-  font-size: 90%;
-  margin-bottom: .5%;
-  opacity: .6;
+.comment-text {
+  background-color: #7fa56a;
+  color: black;
+  margin-left: 12px;
+  height: 40px;
+  padding: 10px
 }
 
 .comment-button {
   width: 95%;
   color: white;
   background-color: black;
+  margin-left: 12px;
 }
 
 .new-post-form input {
@@ -256,8 +275,8 @@ span {
 .new-post {
   color: white;
   background-color: black;
-  width: 95%;
-  margin-left: 20px;
+  width: 97%;
+  margin-left: 15px;
 }
 
 .edit-post-form {

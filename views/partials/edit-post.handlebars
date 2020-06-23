@@ -1,22 +1,19 @@
-
 <div class="container">
   <form class="post-form post">
-    <h5 class="title row">Create New Post</h5>
+    <h5 class="title row">Edit Post</h5>
     <div>
       <label class="new-post-label" for="title">Title</label>
-      <input class="new-post-text" type="text" id="title" />
+      <textarea class="new-post-text" name="text" id="title" cols="80" rows="1">{{title}}</textarea>
+      <!--input class="new-post-text" type="text" id="title">{{title}}</input-->
     </div>
     <div>
       <label class="new-post-label" for="content">Content</label>
       <textarea class="new-post-textarea" name="text" id="content" cols="80" rows="2">{{text}}</textarea>
     </div>
     <div>
-      <button class="new-post-button" type="submit">Create</button>
+      <button class="new-post-button" type="submit">Update</button>
     </div>
   </form>
 </div>
 
-<div>
-  <button class="new-post" type="submit">New Post</button>
-</div>
 <script src="/javascript/post.js"></script>

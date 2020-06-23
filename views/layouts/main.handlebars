@@ -21,12 +21,10 @@
       <nav class="row">
         <a class="col-md-1 nav-item" href="/">Home</a>
         <a class="col-md-2 nav-item" href="/dashboard">Dashboard</a>
-        <!--{{#if loggedIn}} -->
-        <!--a href="/dashboard">dashboard</a-->
-        <!--button id="dashboard" class="btn-no-style">Dashboard</button-->
+        <!--{{#if req.session.loggedIn}}-->
         <!--{{else}}-->
-        <a class="col-md-1 nav-item" href="/login">Login</a>
-        <button id="logout" class="btn-no-style col-md-1 nav-item">Logout</button>
+          <a class="col-md-1 nav-item" href="/login">Login</a>
+          <button id="logout" class="btn-no-style col-md-1 nav-item">Logout</button>
         <!--{{/if}}-->
       </nav>
       </div>
